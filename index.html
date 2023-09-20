@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/icons/app-logo-white.png" type="img/png">
+    <title>Meal App</title>
+</head>
+<body>
+    <!-- header of the app -->
+    <header id="header" class="header">
+        <!-- logo and name od app -->
+        <div class="heading-logo-container on-hover-icon" >
+            <img id="app-logo" src="./Images/icons/app-logo-white.png" alt="App Logo" class="app-logo">
+            <h1 id="heading">Meal App</h1>
+        </div>
+
+        <!-- navigation bar -->
+        <nav id="navigation" class="navigation">
+            <ul class="navigation-list">
+                <li>
+                    <div class="favorite on-hover-icon">
+                        <img src="./Images/icons/favorite.png" alt="Favorite Icon" class="favorite-icon" id="go-to-favorite-icon">
+                        <span class="favorite-text" id="go-to-favorite-text">Favorites</span>
+                    </div>
+
+                </li>
+                <li><img src="Images/icons/menu-white.png" alt="Menu Icon" id="menu-icon" class="menu-icon on-hover-icon"></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <!-- main body -->
+    <main class="main-container">
+        <!-- search input for user -->
+        <div class="search-container">
+            <input type="text" placeholder="Search.." id="search-input" class="search-input">
+            <img src="./Images/icons/search.png" alt="Search Icon" class="search-icon" id="search-icon">
+            
+<!-- items container -->
+        </div>
+    <div class="items-container" id="items-container">
+        <!-- adding items using javascript -->
+
+        </div>
+    </main>
+
+    <!--FAVORITES CONTAINER -->
+    <div class="favorites-container" id="favorites-container">
+        <div class="favorite-items" id="favorite-items">
+            <div class="heading-close-btn-container">
+                <h2> >>Favorites</h2>
+                <img class="on-hover-icon" src="Images/icons/close.png" alt="" id="close-favorite">
+            </div>
+            <div class="fav-items" id="fav-items">
+
+                <!-- adding items using javascript -->
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- ITEM DESCRIPTION PAGE-->
+    <div class="item-description-container" id="item-description-container">
+            <div class="item-description" id="item-description">
+                <!-- adding description using javascript -->
+
+            </div>
+    
+        </div>
+
+        <!-- MENU CONTAINER  -->
+        <div class="menu-container" id="menu-container">
+            <div class="menu-content">
+                <div class="heading-container">
+        
+                    <h2 class="on-hover-icon menu-heading">THE MEALS APP</h2>
+                    <img src="Images/icons/close.png" class="on-hover-icon" id="close-menu-btn">
+                </div>
+              <ul class="list">
+                <li><div class="change-color" id="change-color">
+                    <h2 class="margin-left" id="change-color-toggle">Theme</h2>
+                    <div class="color-box black color-hover" id="0"></div>
+                    <div class="color-box red color-hover" id="1"></div>
+                    <div class="color-box blue color-hover" id="2"></div>
+                    
+                </div></li>
+                
+                <li><span class="margin-left"><h2>Text Style: </h2> <h2 id="change-to-cursive" class="on-hover-icon">Cursive </h2><h2> || </h2> <h2 id="change-to-normal" class="on-hover-icon">Normal</h2></span></li>
+                <li><h2 class="margin-left on-hover-icon" id="favorite-items-count">Favorite Items:0</h2></li>
+              </ul>
+            </div>
+          </div>
+
+    
+
+
+    <!-- adding javascript file for functionality -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
